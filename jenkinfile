@@ -1,0 +1,20 @@
+pipeline {
+  agent any  // Runs on any available machine
+  stages {
+    stage('Build') {
+      steps {
+        echo 'Building the code...'  // Step 1
+      }
+    }
+    stage('Test') {
+      steps {
+        echo 'Running tests...'      // Step 2
+      }
+    }
+    stage('Deploy') {
+      steps {
+        echo 'Deploying the app...'  // Step 3
+      }
+    }
+  }
+}
